@@ -1,0 +1,62 @@
+/*td{
+    text-align:right;
+}*/
+/*.table{
+    display: table;
+}
+.row{
+    display: table-row;
+}
+.cell{
+    display: table-cell;
+}*/
+.k-icon{
+    width:20px;
+    height:20px;
+    float: left;
+}
+.k-icon-collapse{
+    float: left;
+    width:20px;
+    height:20px;
+    background:url("sprite.png") 0px -222px no-repeat;
+}
+.k-icon-collapse:hover{
+    background:url("sprite.png") 0px -30px;
+}
+.k-icon-expand{
+    float: left;
+    width:20px;
+    height:20px;
+    background:url("sprite.png") 0px -190px no-repeat;
+}
+.k-icon-expand:hover{
+    background:url("sprite.png") 0px 0px
+}
+.k-drop{
+    display:none;
+}
+
+.k-rise{
+    display: table-row;
+}
+.bulink{
+    font-size: smaller;
+}
+.revise{
+    color:#23BAB5;
+}
+.delete{
+    color:#CE6494;
+}
+.revisefo{
+    color:#23BAB5;
+}
+.reviseclass{
+    float: right;
+}
+.classIcon{
+    width:50px;
+    height: 50px;
+    background: url("sprite.png") 199px 30px;
+}

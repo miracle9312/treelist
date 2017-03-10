@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var test2=JSON.parse(localStorage.getItem("json_news"));
+    test2.splice(1,1);
+    localStorage.removeItem("json_news");
+    localStorage.setItem("json_news",JSON.stringify(test2));
+    localStorage.clear();
+
+</script>
+</body>
+</html>

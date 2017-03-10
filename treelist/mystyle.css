@@ -1,0 +1,484 @@
+@CHARSET "UTF-8";
+html{font-family:"Microsoft Yahei",Arial; font-size: 13px;}
+body {font-family:"Microsoft Yahei",Arial; font-size: 13px;color:#000000;margin:0px;padding: 0px; background:#ffffff; }
+.firsttree{font-size: 18px;font-family: Microsoft YaHei;}
+.secondtree{font-size: 16px;font-family:Microsoft YaHei ;}
+.destree{font-family: "Microsoft YaHei";font-size: 14px; position:relative;top:1px; border:0;}
+/* .contentOut{
+	display: table;
+} */
+/* .contentLayout{
+    display:flex;
+    display: -webkit-flex; 
+    align-items:center
+} */
+/* .contentInner{
+	display: table-cell; vertical-align:middle;
+	position: absolute; top:50%;}
+}
+.contentInner p{
+	position: relative; top: -50%
+} */
+.tree-header{padding-left: 10px;padding-bottom: 10px;background-color: #3F51B5;height:40px;width:790px;font-size: 18px;font-family: Microsoft YaHei;color:white;padding-top:10px;letter-spacing: 2.5px;}
+/* .classman-icon{
+    position:relative;
+    float:left;
+    width:36px;
+    height:38px;
+    background: url("../../images/admin/manage.png")
+} */
+/* .classman-word{
+    margin-left:5px;
+    position:relative;
+    top:8px;
+    float: left;
+} */
+/* .content{
+    width:798px;
+    height:451px;
+    overflow-y: scroll;
+    overflow-x: auto;
+    border:#CCC 1px solid;
+} */
+table{
+    border:#CCC 1px solid;
+    border-left: none;
+    border-top:none;
+    border-right: none;
+    border-collapse: collapse;
+}
+tr{
+    border:#CCC 1px solid;
+    border-left: none;
+    border-right: none;
+    border-top:none;
+    height:50px;
+}
+.tr-inner-container{
+    padding-left: 10px;
+}
+.k-fir-tree{
+		padding-left:1px;
+	margin-right:5px;
+	width:25px;
+	height:25px;
+	box-shadow:  0 2px 6px rgba(0,0,0,0.2),0 2px 3px rgba(0,0,0,0.05);
+}
+.k-fir-tree:hover{
+	cursor:pointer;
+}
+.k-classname-container{
+	position: relative;
+    top: 12px;
+}
+.k-sec-tree{
+	padding-left:1px;
+	margin-right:5px;
+	width:25px;
+	height:25px;
+	box-shadow:  0 2px 6px rgba(0,0,0,0.2),0 2px 3px rgba(0,0,0,0.05);
+}
+.k-sec-tree:hover{ 
+	cursor:pointer;
+}
+.linkButton{
+	float:right;
+	position:relative;
+	top:-1px;
+/*     width:25px;
+    height:25px;
+    box-shadow:  0 2px 6px rgba(0,0,0,0.2),0 2px 3px rgba(0,0,0,0.05);为毛要取两个值 */
+}
+.linkButton:hover{
+  /*   border-radius: 5px 5px 5px 5px;
+    background-color: #f2f0f0; */
+    cursor:pointer;
+}
+.linkButton:hover .addclass-icon{
+    /* float: left;
+    height:19px;
+    width:17px;
+    background: url("../../images/admin/sprite.png")-31px -64px; */
+    opacity: 1;
+}
+.addclass-icon{
+	position: relative;
+    top: -4px;
+    left: 764px; 
+    float: left;
+    height:19px;
+    width:18px;
+    background: url("../../images/admin/sprite.png")-31px -64px;
+    opacity: 0.5;
+}
+.addclass-word{
+    position:relative;
+    left:2px;
+    top: -3px;
+    color: #444;
+    font-size: 16px;
+    font-family:Microsoft YaHei ;
+}
+.destree-icon{
+    position: relative;
+    top: 5px;
+    float: left;
+    width:15px;
+    height:15px;
+    background: url("../../images/admin/sprite.png")-115px -290px;
+}
+.describeContent{
+	width:100%;
+	height:100%;
+	vertical-align:middle;
+}
+.revise{
+    padding-left: 8px;
+    padding-top: 8px;
+    width:25px;
+    height:25px;
+    box-shadow:  0 2px 6px rgba(0,0,0,0.2),0 2px 3px rgba(0,0,0,0.05);
+
+}
+.revise:hover{
+    border-radius: 5px 5px 5px 5px;
+    background-color: #f2f0f0;
+    cursor:pointer;
+}
+.revise:hover .revise-icon{
+    position: relative;
+    top:2px;
+    float: left;
+    height:15px;
+    width:20px;
+    background: url("../../images/admin/sprite.png")-32px 0px;
+    opacity: 1;
+}
+.revise-icon{
+    position: relative;
+    top:2px;
+    float: left;
+    height:15px;
+    width:20px;
+    background: url("../../images/admin/sprite.png")-32px 0px;
+    opacity: 0.5;
+}
+.revise-word{
+    float: left;
+    top: -3px;
+    color: #444;
+    font-size: 16px;
+    font-family:Microsoft YaHei ;
+}
+.delete{
+    padding-left: 8px;
+    padding-top: 8px;
+    width:25px;
+    height:25px;
+    box-shadow:  0 2px 6px rgba(0,0,0,0.2),0 2px 3px rgba(0,0,0,0.05);
+
+}
+.delete:hover{
+    border-radius: 5px 5px 5px 5px;
+    background-color: #f2f0f0;
+    cursor:pointer;
+}
+.delete:hover .delete-icon{
+    position: relative;
+    top:5px;
+    float: left;
+    height:15px;
+    width:15px;
+    background: url("../../images/admin/sprite.png")-33px -18px;
+    opacity: 1;
+}
+.delete-icon{
+    position: relative;
+    top:5px;
+    float: left;
+    height:15px;
+    width:15px;
+    background: url("../../images/admin/sprite.png")-33px -18px;
+    opacity: 0.5;
+}
+.delete-word{
+    float: left;
+    position: relative;
+    left: 5px;
+    color: #444;
+    font-size: 16px;
+    font-family:Microsoft YaHei ;
+}
+.form-style{
+    z-index: 103;
+    display: none;
+    background-color: white;
+}
+#form-mask{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color:#000;
+    opacity: 0.1;
+    display: none;
+}
+.title-bar{
+    padding-top: 5px;
+    padding-left: 8px;
+    width:494px;
+    height:32px;
+    background-color: #3F51B5 ;
+}
+.title-bar:hover{
+    cursor:move ;
+}
+.title-bar-word{
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-family:Microsoft YaHei ;
+    color:white;
+}
+.form-close-container{
+    position: relative;
+    top: -22px;
+    left: -3px;
+	width:40px;
+	height:30px;
+	float:right;
+}
+.form-close-container:hover{
+	background-color: red;
+	cursor:default;
+}
+.form-close{
+	margin-left: 10px;
+    margin-top: 5px;
+    width: 20px;
+    height: 18px;
+	background: url("../../images/admin/sprite.png")-46px -15px;
+}
+.forma-content{
+    text-align: center ;
+    width:500px;
+    height: 165px;
+    border:#CCC 1px solid;
+}
+.forma-input-container{
+    float:top;
+    margin-top:10px;
+}
+.uploadify-button{
+	position:relative;
+	left:-61px;
+}
+.describeWord{
+	    position: relative;
+        top: -37px;
+}
+.engWord{
+	position: relative;
+    top: -4px;
+}
+.chiWord{
+	position: relative;
+    top: -4px;
+}
+.Validform_wrong {
+    color: red;
+    padding-left: 20px;
+    position: relative;
+    left: -67px;
+    white-space: pre;
+    background: url("../../js/commons/Validform/images/error.png") no-repeat 141px center;
+}
+label{
+    font-family: Microsoft YaHei;
+    font-size: 14px;
+}
+input{
+    font-family: Microsoft YaHei;
+    font-size: 12px;
+    margin-left: 10px;
+    padding-left: 5px;
+    border:1px #f0f0f0 solid;
+    height: 25px;
+}
+input:hover{
+    box-shadow: 2px 2px 2px 0.2px #7f7d7d;
+
+}
+input.describeInput{
+	height:50px
+}
+.forma-edit-container{
+    text-align: left;
+    width:406px;
+    height: 125px;
+}
+.forma-left-container{
+    float: left;
+    text-align: right;
+    width: 251px;
+}
+.img-preview{
+    margin-left: 13px;
+    margin-top: 10px;
+    float: left;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #cccccc;
+}
+.forma-file-container{
+    position: relative;
+    left: 20px;
+    width: 400px;
+    height:25px ;
+}
+.form-button-container{
+    padding-top: 15px;
+    border: 1px solid #CCC;
+    background-color:#f6f3f3 ;
+    width:500px;
+    height:40px;
+}
+.button-container{
+    width: 96px;
+    float: right;
+}
+.button-container:hover{
+    cursor: pointer;
+
+}
+.button-container:hover .form-submit-icon{
+    opacity: 1;
+}
+.button-container:hover .form-cancel-icon{
+    opacity: 1;
+}
+.form-submit-icon{
+    margin-top: 3px;
+    opacity: 0.5;
+    float:left;
+    width:16px;
+    height:16px;
+    background: url("../../images/admin/sprite.png")-33px -32px;
+}
+.form-cancel-icon{
+    margin-top: 3px;
+    opacity: 0.5;
+    float:left;
+    width:16px;
+    height:16px;
+    background: url("../../images/admin/sprite.png")-32px -48px;
+}
+.previewPicture{
+	width:100px;
+	height:100px;
+}
+.preview-container-add{
+	border:1px solid #cccccc;
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	position: relative;
+    left: 121px;
+    top: -102px;
+}
+.reviewbtn-common {
+    position: relative;
+    top: -99px;
+    left: 380px;
+    width: 68px;
+    height: 27px;
+    line-height: 30px;
+    border: 0;
+    color: #ffffff;
+}
+.main2b-common {
+    background: #ce6494; 
+}
+.jcrop-preview-add{
+	width:100px;
+	height:100px;
+}
+ a.uploadify-button{
+    display:inline-block;
+	background-color: #3F51B5;
+	line-height:25px;
+	padding:0 10px 2px;
+    font-size:12px;
+    font-weight: 200;
+    font-family: '微软雅黑';
+	color:#FFF;
+	cursor:pointer;
+	text-decoration:none;
+	margin:0 0 18px 0;
+	text-decoration:none;
+}
+a.uploadify-button:hover{
+    border-radius: 5px 5px 5px 5px;
+    opacity:0.5
+} 
+.form-button{
+    float:left;
+    font-size: 16px;
+    font-family:Microsoft YaHei ;
+}
+.k-icon{
+    width:20px;
+    height:20px;
+    float: left;
+}
+.k-icon-collapse{
+    float: left;
+    width:20px;
+    height:20px;
+    background:url("../../images/admin/sprite.png") 2px -222px no-repeat;
+}
+.k-icon-collapse:hover{
+    background:url("../../images/admin/sprite.png") 2px -30px;
+}
+.k-icon-expand{
+    float: left;
+    width:20px;
+    height:20px;
+    background:url("../../images/admin/sprite.png") 2.5px -190px no-repeat;
+}
+.k-icon-expand:hover{
+    background:url("../../images/admin/sprite.png") 2.5px 0px
+} 
+.k-drop{
+    display:none;
+}
+
+.k-rise{
+    display: table-row;
+}
+.bulink{
+    font-size: smaller;
+}
+.revise{
+    color:#23BAB5;
+}
+.delete{
+    color:#CE6494;
+}
+.revisefo{
+    color:#23BAB5;
+}
+.reviseclass{
+    float: right;
+}
+/* .classIcon{
+    width:50px;
+    height: 50px;
+    background: url("../../images/admin/sprite.png") 199px 30px;
+} */
+.contentright{
+	margin-left:20px;
+	margin-top:40px;
+	
+}

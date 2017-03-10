@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<div>
+    <table>
+        <colgroup>
+            <col style="width:230px">
+            <col style="width:300px">
+            <col style="width:80px">
+            <col style="width:80px">
+            <col style="width:100px">
+        </colgroup>
+        <tr>
+            <td>
+                <div class="k-icon k-icon-collapse" id="k-drop"></div>
+                <div >分类名称</div>
+            </td>
+            <td>
+                <div>英文名称</div>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                <div>图像</div>
+            </td>
+            <td>
+                <div>操作</div>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-sec-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-a-drag k-icon k-icon-expand k-sec-tree" ></span>
+                <div>资讯分类</div>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <span class="classIcon"></span>
+                <a class="k-add hasone" href="#" name="k-a-drag">添加分类</a>
+            </td>
+        </tr>
+            <tr class="k-drag k-drop k-a-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <div class="k-word">行业动态</div>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="行业动态">删除</a>
+                <a href="#" class="bulink revise" name="行业动态">修改</a>
+            </td>
+        </tr>
+            <tr class="k-drag k-drop k-a-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <div class="k-word">其他资讯</div>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class=" bulink delete" name="其他资讯">删除</a>
+                <a href="#" class=" bulink revise" name="其他资讯">修改</a>
+            </td>
+        </tr>
+            <tr class="k-drag k-drop k-a-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <div class="k-word">技术前沿</div>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="技术前沿">删除</a>
+                <a href="#" class=" bulink revise" name="技术前沿">修改</a>
+            </td>
+        </tr>
+            <tr class="k-drag k-drop k-a-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <div class="k-word">政策动向</div>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="政策动向">删除</a>
+                <a href="#" class="bulink revise" name="政策动向">修改</a>
+            </td>
+        </tr>
+            <tr class="k-drag  k-drop k-a-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <div class="k-word">comodel</div>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="comodel">删除</a>
+                <a href="#" class="bulink revise" name="comodel">修改</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-a-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <div class="k-word">软件资讯</div>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="软件资讯">删除</a>
+                <a href="#" class="bulink revise" name="软件资讯">修改</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-sec-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-b-drag k-icon k-icon-expand k-sec-tree"></span>
+                <div>博客分类</div>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <span class="classIcon"></span>
+                <a class="k-add hasone" href="#" name="k-b-drag">添加分类</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-b-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <div class="k-word">行业观察</div>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="行业观察">删除</a>
+                <a href="#" class="bulink revise" name="行业观察">修改</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-b-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <div class="k-word">建模仿真</div>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="建模仿真">删除</a>
+                <a href="#" class="bulink revise" name="建模仿真">修改</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-b-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <div class="k-word">产品设计</div>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="产品设计">删除</a>
+                <a href="#" class="bulink revise" name="产品设计">修改</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-b-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <div class="k-word">软件应用</div>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class= "bulink delete" name="软件应用">删除</a>
+                <a href="#" class= "bulink revise" name="软件应用">修改</a>
+            </td>
+        </tr>
+        <tr class="k-drag  k-drop k-b-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <div class="k-word">其他博客</div>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="其他博客">删除</a>
+                <a href="#" class="bulink revise" name="其他博客">修改</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-sec-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-c-drag k-icon k-icon-expand k-sec-tree"></span>
+                <div>知识服务商分类</div>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <span class="classIcon"></span>
+                <a class="k-add hastwo" href="#" name="k-c-drag">添加分类</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-c-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>IT服务</span>
+                <a href="#" class="bulink revisefo" name="IT服务">修改</a>
+            </td>
+            <td>
+                <span>IT Service</span>
+                <a href="#" class="bulink revisefo" name="IT Service">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="IT服务">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-c-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>技术服务</span>
+                <a href="#" class="bulink revisefo" name="技术服务">修改</a>
+            </td>
+            <td>
+                <span>Technology</span>
+                <a href="#" class="bulink revisefo" name="Technology">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="技术服务">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-sec-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-d-drag k-icon k-icon-expand k-sec-tree"></span>
+                <span>课程分类</span>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <span class="classIcon"></span>
+                <a class="k-add hastwo" href="#" name="k-d-drag">添加分类</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-d-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>行业应用研究</span>
+                <a href="#" class="bulink revisefo" name="行业应用研究">修改</a>
+            </td>
+            <td>
+                <span>Industry application research</span>
+                <a href="#" class="bulink revisefo" name="行业应用研究">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="行业应用研究">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-d-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>Modelica技术培训</span>
+                <a href="#" class="bulink revisefo" name="Modelica技术培训">修改</a>
+            </td>
+            <td>
+                <span>Modelica Technology Training</span>
+                <a href="#" class="bulink revisefo" name="Modelica Technology Training">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="Modelica技术培训">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-d-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>软件应用培训</span>
+                <a href="#" class="bulink revisefo" name="软件应用培训">修改</a>
+            </td>
+            <td>
+                <span>Software application training</span>
+                <a href="#" class="bulink revisefo" name="Software application training">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="软件应用培训">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-sec-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-e-drag k-icon k-icon-expand k-sec-tree"></span>
+                <span>模型库分类</span>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <span class="classIcon"></span>
+                <a class="k-add hastwo" href="#" name="k-e-drag">添加分类</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-e-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>车辆工程</span>
+                <a href="#" class="bulink revisefo" name="车辆工程">修改</a>
+            </td>
+            <td>
+                <span>Vehicle Engineering</span>
+                <a href="#" class="bulink revisefo" name="Vehicle Engineering">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="车辆工程">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-e-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>生化工程</span>
+                <a href="#" class="bulink revisefo" name="生化工程">修改</a>
+            </td>
+            <td>
+                <span>Biochemical Engineering</span>
+                <a href="#" class="bulink revisefo" name="Biochemical Engineering">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="生化工程">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-e-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>数学模型</span>
+                <a href="#" class="bulink revisefo" name="数学模型">修改</a>
+            </td>
+            <td>
+                <span>Math Model</span>
+                <a href="#" class="bulink revisefo" name="Math Model">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="数学模型">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-e-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>控制系统</span>
+                <a href="#" class="bulink revisefo" name="控制系统">修改</a>
+            </td>
+            <td>
+                <span>Control System</span>
+                <a href="#" class="bulink revisefo" name="Control System">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                操作
+            </td>
+        </tr>
+        <tr class="k-drag  k-drop k-e-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>电力工程</span>
+                <a href="#" class="bulink revisefo" name="电力工程">修改</a>
+            </td>
+            <td>
+                <span>Power Engineering</span>
+                <a href="#" class="bulink revisefo" name="Power Engineering">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="电力工程">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-e-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>建筑工程</span>
+                <a href="#" class="bulink revisefo" name="建筑工程">修改</a>
+            </td>
+            <td>
+                <span>Architectural Engineering</span>
+                <a href="#" class="bulink revisefo" name="Architectural Engineering">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="建筑工程">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-e-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>热电工程</span>
+                <a href="#" class="bulink revisefo" name="热电工程">修改</a>
+            </td>
+            <td>
+                <span>Thermoelectric Engineering</span>
+                <a href="#" class="bulink revisefo" name="Thermoelectric Engineering">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="热电工程">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-e-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>流体系统</span>
+                <a href="#" class="bulink revisefo" name="流体系统">修改</a>
+            </td>
+            <td>
+                <span>Fluid System</span>
+                <a href="#" class="bulink revisefo" name="Fluid System">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="流体系统">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-e-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>机械工程</span>
+                <a href="#" class="bulink revisefo" name="机械工程">修改</a>
+            </td>
+            <td>
+                <span>Mechanical Engineering</span>
+                <a href="#" class="bulink revisefo" name="Mechanical Engineering">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="机械工程">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-e-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>电子工程</span>
+                <a href="#" class="bulink revisefo" name="电子工程">修改</a>
+            </td>
+            <td>
+                <span>Electronic Engineering</span>
+                <a href="#" class="bulink revisefo" name="Electronic Engineering">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="电子工程">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-sec-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-f-drag k-icon k-icon-expand k-sec-tree"></span>
+                <span>专家分类</span>
+            </td>
+            <td>
+                英文名称（空）
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <span class="classIcon"></span>
+                <a class="k-add hastwo" href="#" name="k-f-drag">添加分类</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-f-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>能源动力</span>
+                <a href="#" class="bulink revisefo" name="能源动力">修改</a>
+            </td>
+            <td>
+                <span>Energy power</span>
+                <a href="#" class="bulink revisefo" name="Energy power">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="能源动力">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-f-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>环境工程</span>
+                <a href="#" class="bulink revisefo" name="环境工程">修改</a>
+            </td>
+            <td>
+                <span>Environmental Engineering</span>
+                <a href="#" class="bulink revisefo" name="Environmental Engineering">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="环境工程">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-f-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>机械工程</span>
+                <a href="#" class="bulink revisefo" name="机械工程">修改</a>
+            </td>
+            <td>
+                <span>Mechanical Engineering</span>
+                <a href="#" class="bulink revisefo" name="Mechanical Engineering">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="机械工程">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-f-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>电气工程</span>
+                <a href="#" class="bulink revisefo" name="电气工程">修改</a>
+            </td>
+            <td>
+                <span>Electrical engineering</span>
+                <a href="#" class="bulink revisefo" name="Electrical engineering">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="电气工程">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag  k-drop k-f-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>电子科学</span>
+                <a href="#" class="bulink revisefo" name="电子科学">修改</a>
+            </td>
+            <td>
+                <span>Electronic Science</span>
+                <a href="#" class="bulink revisefo" name="Electronic Science">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="电子科学">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-f-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>土木工程</span>
+                <a href="#" class="bulink revisefo" name="土木工程">修改</a>
+            </td>
+            <td>
+                <span>Civil Engineering</span>
+                <a href="#" class="bulink revisefo" name="Civil Engineering">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="土木工程">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-f-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>海洋工程</span>
+                <a href="#" class="bulink revisefo" name="海洋工程">修改</a>
+            </td>
+            <td>
+                <span>Oceanographic Engineering</span>
+                <a href="#" class="bulink revisefo" name="Oceanographic Engineering">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="海洋工程">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-f-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>航天航空</span>
+                <a href="#" class="bulink revisefo" name="航天航空">修改</a>
+            </td>
+            <td>
+                <span>Aerospace</span>
+                <a href="#" class="bulink revisefo" name="Aerospace">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="航天航空">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-f-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>核电工程</span>
+                <a href="#" class="bulink revisefo" name="核电工程">修改</a>
+            </td>
+            <td>
+                <span>Nuclear power engineering</span>
+                <a href="#" class="bulink revisefo" name="Nuclear power engineering">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="核电工程">删除</a>
+            </td>
+        </tr>
+        <tr class="k-drag k-drop k-f-drag">
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span>其他领域</span>
+                <a href="#" class="bulink revisefo" name="其他领域">修改</a>
+            </td>
+            <td>
+                <span>Other</span><!--//此处设置为div时，a元素不会紧靠它，设置为span是能，为什么？？-->
+                <a href="#" class="bulink revisefo" name=" Other">修改</a>
+            </td>
+            <td>
+                <div>描述</div>
+            </td>
+            <td>
+                图像
+            </td>
+            <td>
+                <a href="#" class="bulink delete" name="其他领域">删除</a>
+            </td>
+        </tr>
+        </table>
+</div>
+<script type="text/javascript" src="myscript.js"></script>
+</body>
+</html>

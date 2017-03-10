@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="${nginxpath}${ver("/css/admin/mystyle.css")}" />
+    <link rel="stylesheet" type="text/css" href="${nginxpath}${ver("/js/commons/blackbox/css/blackbox.css")}"/>
+    <link rel="stylesheet" type="text/css" href="${nginxpath}${ver("/css/admin/base.css")}" />
+    <link rel="stylesheet" type="text/css" href="${nginxpath}${ver("/js/commons/Jcrop/jquery.Jcrop.min.css")}" />
+</head>
+<body>
+<%include("header.co",{'crumb1':'分类管理','crumb2':'所有分类'}){}%>
+<div class="contentleft">
+<%include("nav.co",{'s':'class_1'}){}%>
+</div>
+<div class="contentright">
+    <!--<div class="tree-header"><div class="classman-icon"></div><div class="classman-word">分类管理</div></div>-->
+   <div class="content">
+    <table>
+        <colgroup>
+            <col style="width:220px">
+            <col style="width:300px">
+            <col style="width:360px">
+            <col style="width:80px">
+            <col style="width:40px">
+        </colgroup>
+        <tr>
+            <td>
+                <span class="k-icon"></span>
+                <div class="k-icon k-icon-expand k-fir-tree" id="k-drop"></div>
+                <div class="firsttree" style="color:rgb(233, 87, 63);">分类名称</div>
+            </td>
+            <td>
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <div class="firsttree">英文名称</div>
+            </td>
+            <td>
+                <div class="firsttree">描述</div>
+            </td>
+            <td>
+                <div class="firsttree">图像</div>
+            </td>
+            <td>
+                <div class="firsttree">操作</div>
+            </td>
+        </tr>
+        <tr class="k-drag k-rise k-sec-drag" id="info">
+            <td>
+            <div class="k-classname-container">
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>              
+                <div class="info k-icon k-icon-collapse k-sec-tree"></div>       
+                <div class="secondtree">资讯分类</div> 
+                </div>
+                <div class="linkButton" id="?info">
+                    <div class="addclass-icon"></div>
+                </div>                            
+                <!--<div class="linkButton" id="?info">
+                    <div class="addclass-icon"></div>
+                </div>-->
+            </td>
+            <td>
+                <div class="secondtree"></div>
+            </td>
+            <td>
+                <div class="secondtree"></div>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr class="k-drag k-rise k-sec-drag" id="blog">
+            <td>
+                <div class="k-classname-container">
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="blog k-icon k-icon-collapse k-sec-tree"></span>
+                <div class="secondtree">博客分类</div> 
+                 </div>          
+                <div class="linkButton" id="?blog">
+                    <div class="addclass-icon"></div>
+                </div>                             
+            </td>
+            <td>
+                <div class="secondtree"></div>
+            </td>
+            <td>
+                <div class="secondtree"></div>
+            </td>
+            <td>               
+            </td>
+            <td>           
+                <!--<div class="linkButton" id="?blog">
+                    <div class="addclass-icon"></div>
+                </div>-->
+            </td>
+        </tr>
+        <tr class="k-drag k-rise k-sec-drag" id="supplier">
+            <td>
+            <div class="k-classname-container">
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="supplier k-icon k-icon-collapse k-sec-tree"></span>
+                <div class="secondtree">知识服务商分类</div>
+                </div>
+                <div class="linkButton" id="?supplier">
+                    <div class="addclass-icon"></div>
+                </div>
+            </td>
+            <td>
+                <div class="secondtree"></div>
+            </td>
+            <td>
+                <div class="secondtree"></div>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr class="k-drag k-rise k-sec-drag" id="courses">
+            <td>
+            <div class="k-classname-container">
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="courses k-icon k-icon-collapse k-sec-tree"></span>
+                <span class="secondtree">课程分类</span>
+                </div>
+                <div class="linkButton" id="?courses">
+                    <div class="addclass-icon"></div>
+                </div>
+            </td>
+            <td>
+                <div class="secondtree"></div>
+            </td>
+            <td>
+                <div class="secondtree"></div>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr class="k-drag k-rise k-sec-drag" id="ipc">
+            <td>
+            <div class="k-classname-container">
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="ipc k-icon k-icon-collapse k-sec-tree"></span>
+                <span class="secondtree">专利分类</span>
+                </div>
+                <div class="linkButton" id="?ipc">
+                    <div class="addclass-icon"></div>
+                </div>
+            </td>
+            <td>
+                <div class="secondtree"></div>
+            </td>
+            <td>
+                <div class="secondtree"></div>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr class="k-drag k-rise k-sec-drag" id="case">
+            <td>
+            <div class="k-classname-container">
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="case k-icon k-icon-collapse k-sec-tree"></span>
+                <span class="secondtree">案例分类</span>
+                </div>
+                <div class="linkButton" id="?case">
+                    <div class="addclass-icon"></div>
+                </div>
+            </td>
+            <td>
+                <div class="secondtree"></div>
+            </td>
+            <td>
+                <div class="secondtree"></div>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr class="k-drag k-rise k-sec-drag" id="trade">
+            <td>
+            <div class="k-classname-container">
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="trade k-icon k-icon-collapse k-sec-tree"></span>
+                <span class="secondtree">模型库分类</span>
+                </div>
+                <div class="linkButton" id="?trade">
+                    <div class="addclass-icon"></div>
+                </div>
+            </td>
+            <td>
+               <div class="secondtree"></div>
+            </td>
+            <td>
+                <div class="secondtree"></div>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr class="k-drag k-rise k-sec-drag" id="expert">
+            <td>
+             <div class="k-classname-container">
+                <span class="k-icon"></span>
+                <span class="k-icon"></span>
+                <span class="expert k-icon k-icon-collapse k-sec-tree" ></span>
+                <span class="secondtree">专家分类</span>
+                </div>
+                <div class="linkButton" id="?expert">
+                    <div class="addclass-icon"></div>
+                </div>
+            </td>
+            <td>
+                <div class="secondtree"></div>
+            </td>
+            <td>
+                <div class="secondtree"></div>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+
+        </table>
+</div>
+    <div id="form-mask">
+    </div>
+     <div class="form-style" id="addForm" style="position: absolute;top: 100px;left: 400px">
+        <div class="title-bar addForm">
+            <div class="title-bar-word addForm">编辑</div>
+            <div class="form-close-container" id="closeForm"><div class="form-close"></div>
+            </div>
+        </div>
+        <div class="forma-content">
+            <div class="forma-edit-container">
+                <div class="forma-left-container">
+                <div class="forma-input-container">
+                <span class="chiWord">分类名称：</span><textarea class="forma" rows="1" cols="20" placeholder="请输入分类名称" onblur=checkContent(this)></textarea>
+                <div class="Validform_wrong" style="display:none">请输入分类名称</div>                    
+                    <!--<label for="Name">分类名称：<input class="forma" id="Name" name="Name" type="text" placeholder="请输入分类名称"></label>-->
+                </div>
+                <div class="forma-input-container">
+                <span class="engWord"> 英文名称：</span><textarea class="forma" rows="1" cols="20" placeholder="请输入英文名称" onblur=checkContent(this)></textarea>                
+                <div class="Validform_wrong" style="display:none">请输入英文名称</div>
+                    <!--<label for="Ename">英文名称：<input class="forma" id="Ename" name="Ename" type="text" placeholder="请输入英文名称"></label>-->
+                </div>
+                <div class="forma-input-container">
+                <span class="describeWord">描述：</span><textarea class="forma" rows="3" cols="20" placeholder="请输入描述" onblur=checkContent(this)></textarea>
+                <div class="Validform_wrong" style="display:none">请输入描述       </div>
+                    <!--<label for="Describe">描述：<input class="forma describeInput" id="Describe" name="Describe" type="text" placeholder="请输入描述"></label>-->
+                </div>
+                    </div>
+                <div class="img-preview" id="addPreview">
+                    <img id="reviseAddFormimg" class="previewPicture" src="${userdefaultimg}"/>
+                </div>
+                <div id="preview-pane-add">
+                <div class="preview-container-add" id="pupload_big_out_add">
+                <img class="jcrop-preview-add" id="pupload_big_add" src="${userdefaultimg}"/>
+                </div>
+                </div>
+                <div style="margin:10px 0 0 10px;">
+                <input id="iconSaveBtn" type="button" class="reviewbtn-common main2b-common" value="保存头像"/>
+                </div>
+            </div>
+            <div id="selectAddImage" class="uploadImageBtn"></div>
+            <!--<div class="forma-file-container">
+            <label for="Image">图像：<input class="forma" style="width: 220px;" id="Image" name="Image" type="file" placeholder="请选择图片" onchange="addpreview(this)" ></label>
+        </div>-->
+        </div>
+        <div class="form-button-container">
+            <div class="button-container">
+                <div class="form-submit-icon"></div>
+                <div class="form-button" id="submit" >提交</div>
+            </div>
+            <div class="button-container">
+                <div class="form-cancel-icon"></div>
+                <div class="form-button" id="cancel">取消</div>
+            </div>
+        </div>
+    </div>
+<!--<button id="initial">还原初始值</button>-->
+    <div class="form-style" id="reviseForm" style="position: absolute;top: 110px;left: 400px">
+        <div class="title-bar reviseForm">
+            <div class="title-bar-word reviseForm">编辑</div>
+            <div class="form-close-container" id="closereForm"><div class="form-close"></div>
+            </div>
+        </div>
+        <div class="forma-content">
+            <div class="forma-edit-container">
+                <div class="forma-left-container">
+                <div class="forma-input-container">
+                <span class="chiWord"> 分类名称：</span><textarea class="formb" rows="1" cols="20" placeholder="请输入分类名称" onblur=checkContent(this)></textarea>
+                <div class="Validform_wrong" style="display:none">请输入分类名称</div>                                
+                </div>
+                <div class="forma-input-container">
+                <span class="engWord"> 英文名称：</span><textarea class="formb" rows="1" cols="20" placeholder="请输入英文名称" onblur=checkContent(this)></textarea>                                                
+                <div class="Validform_wrong" style="display:none">请输入英文名称</div>
+                    <!--<label for="rename">英文名称：<input class="formb" id="rename" name="Ename" type="text" placeholder="请输入英文名称"></label>-->
+                </div>
+                <div class="forma-input-container">
+                <span class="describeWord"> 描述：</span><textarea class="formb" rows="3" cols="20" placeholder="请输入描述" onblur=checkContent(this)></textarea>                                                                
+                <div class="Validform_wrong" style="display:none">请输入描述       </div>    
+                    <!--<label for="rdescibe">描述：<input class="formb describeInput" id="rdescibe" name="Describe" type="text" placeholder="请输入描述"></label>-->
+                </div>
+                    </div>
+                <div class="img-preview" id="imagePreview">
+                    <img id="reviseformimg" class="previewPicture" src="http://172.28.211.12//images/index/blue/user_gray.png">
+                </div>
+                <div id="preview-pane-revise">
+                <div class="preview-container-add" id="pupload_big_out_revise">
+                <img class="jcrop-preview-add" id="pupload_big_revise" src="http://172.28.211.12//images/index/blue/user_gray.png"/>
+                </div>
+                </div>
+                 <div style="margin:10px 0 0 10px;">
+                <input id="riconSaveBtn" type="button" class="reviewbtn-common main2b-common" value="保存头像"/>
+                </div>
+            </div>
+            <div id="selectPicture" class="uploadImageBtn"></div>
+           <!-- <div class="forma-file-container">
+                <button id="selectPicture"></button>
+                <label for="rimage">图像：<input class="formb" style="width: 220px" id="rimage" name="Image" placeholder="请选择图片" onchange="revisepreview(this)"></label>
+            </div>-->
+        </div>
+        <div class="form-button-container">
+            <div class="button-container">
+                <div class="form-submit-icon"></div>
+                <div class="form-button" id="rsubmit" >提交</div>
+            </div>
+            <div class="button-container">
+                <div class="form-cancel-icon"></div>
+                <div class="form-button" id="rcancel">取消</div>
+            </div>
+        </div>
+    <!--</div>-->
+    </div>
+<script type="text/javascript" src="${nginxpath}${ver("/js/bower_components/jquery/dist/jquery.min.js")}"></script>
+<script type="text/javascript" src="${nginxpath}${ver("/js/commons/Huploadify/jquery.Huploadify.js")}"></script>
+<script type="text/javascript" src="${nginxpath}${ver("/js/util/uuid.js")}"></script>
+<script type="text/javascript" src="${nginxpath}${ver("/js/commons/blackbox/js/jquery.blackbox.min.js")}"></script>
+<script type="text/javascript" src="${nginxpath}${ver("/js/admin/getBasicData.js")}"></script>
+<script type="text/javascript" src="${nginxpath}${ver("/js/commons/Notifier/Notifier.js")}"></script>
+<script type="text/javascript" src="${nginxpath}${ver("/js/commons/Jcrop/jquery.Jcrop.min.js")}"></script>
+<script type="text/javascript" src="${nginxpath}${ver("/js/admin/myscript.js")}"></script>
+</body>
+</html>

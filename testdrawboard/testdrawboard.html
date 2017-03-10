@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="boardstyle.css" type="text/css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+</head>
+<body>
+<a hidden="hidden" id="download0"></a>
+<div class="toolbar">
+    <div class="draw-icon" id="pencil" onclick="freeDraw()">
+        <img class="tool-img" src="iconfont-qianbi.png" />
+    </div>
+    <div class="draw-icon" id="line" onclick="drawLine()">
+        <img class="tool-img" src="iconfont-zhixianceliang.png">
+    </div>
+    <div class="draw-icon" id="circle" onclick="drawCircle()">
+        <img class="tool-img" src="iconfont-yuanxing.png">
+    </div>
+    <div class="draw-icon" id="rect" onclick="drawRect()">
+        <img class="tool-img" src="iconfont-juxing.png">
+    </div>
+    <div class="draw-icon" id="clear" onclick="clearBoard()">
+        <img class="tool-img" src="iconfont-qingping.png">
+    </div>
+    <div class="draw-icon" id="restore" onclick="cancelDraw()">
+        <img class="tool-img" src="iconfont-chexiao.png">
+    </div>
+    <div class="draw-icon" id="forward" onclick="stepDraw()">
+        <img class="tool-img" src="iconfont-chexiao%20(1).png">
+    </div>
+    <div class="draw-icon" id="eraser" onclick="erase()">
+        <img class="tool-img" src="iconfont-xiangpi.png">
+    </div>
+    <div class="draw-icon" id="brush" onclick="brush()">
+        <img class="tool-img" src="iconfont-shuazi.png">
+    </div>
+    <div class="draw-icon" id="choosecolor" onclick="showColorPicker(this,event)" >
+        <img class="tool-img" src="iconfont-diaoseban.png" width="30px" height="30px" />
+    </div>
+    <div class="draw-icon" id="chooseline" onclick="chooseLine(event)" >
+        <img class="tool-img" src="iconfont-xian.png" width="30px" height="30px" />
+    </div>
+    <div class="draw-icon" id="save" onclick="saveFile()" >
+        <img class="tool-img" src="iconfont-baocun.png" width="30px" height="30px" />
+    </div>
+    <div class="draw-icon" id="download" onclick="download()" >
+        <img class="tool-img" src="iconfont-xiazai.png" width="30px" height="30px" />
+    </div>
+</div>
+
+<div id="line-contain" style="display: none">
+    <div class="var-line-contain" id="thin-line" onclick="lineweight(this)">
+        <div class="thin-line"></div>
+    </div>
+    <div class="var-line-contain" id="middle-line" onclick="lineweight(this)">
+        <div class="middle-line"></div>
+    </div>
+    <div class="var-line-contain" id="thick-line" onclick="lineweight(this)">
+        <div class="thick-line"></div>
+    </div>
+</div>
+
+<div class="canvas-contain">
+<canvas id="canvas" width="500px" height="500px">
+
+</canvas>
+<canvas id="canvasfake" width="500px" height="500px">
+
+</canvas>
+</div>
+
+<div class="masterpiece-contain">
+    <div class="var-masterpiece-contain">
+        <img class="img-contain" width="200px" height="200px" />
+        <div class="delete-contain"><a onclick="deletePicture(event)" class="delete-button" href="#">删除</a></div>
+    </div>
+    <div class="var-masterpiece-contain">
+        <img class="img-contain" width="200px" height="200px" />
+        <div class="delete-contain"><a onclick="deletePicture(event)" class="delete-button" href="#">删除</a></div>
+    </div>
+    <div class="var-masterpiece-contain">
+        <img class="img-contain" width="200px" height="200px" />
+        <div class="delete-contain"><a onclick="deletePicture(event)" class="delete-button" href="#">删除</a></div>
+    </div>
+    <div class="var-masterpiece-contain">
+        <img class="img-contain" width="200px" height="200px" />
+        <div class="delete-contain"><a onclick="deletePicture(event)" class="delete-button" href="#">删除</a></div>
+    </div>
+    <div class="var-masterpiece-contain">
+        <img class="img-contain" width="200px" height="200px" />
+        <div class="delete-contain"><a onclick="deletePicture(event)" class="delete-button" href="#">删除</a></div>
+    </div>
+    <div class="var-masterpiece-contain">
+        <img class="img-contain" width="200px" height="200px" />
+        <div class="delete-contain"><a onclick="deletePicture(event)" class="delete-button" href="#">删除</a></div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="createid.js"></script>
+<script type="text/javascript" src="draw.js"></script>
+<script language="javascript" src="ColorPicker.js" charset="utf-8"></script>
+</html>
